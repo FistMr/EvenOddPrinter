@@ -40,7 +40,7 @@ public class EvenOddPrinter {
                             return;
                         }
                     }
-                    System.out.println("Нечётное: " + i);
+                    logger.info("Нечётное: {}", i);
                     isEvenNext = true;
                     lock.notify();
                 }
